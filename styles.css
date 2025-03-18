@@ -23,8 +23,8 @@ body {
 
 /* 🔹 Profile Picture */
 .profile-pic {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     margin: 20px 0;
 }
@@ -291,7 +291,7 @@ body {
 /* 🔹 University Projects & Resume Section */
 #university-projects,
 #resume {
-    padding: 50px 20px;
+    padding: 20px 20px;
     text-align: center;
 }
 
@@ -305,6 +305,7 @@ body {
     margin: 20px auto;
     text-align: center;
     color: white;
+    padding-bottom: 20px;
 }
 
 /* 🔹 Responsive Fix for Smaller Screens */
@@ -321,4 +322,38 @@ body {
     .resume-content {
         max-width: 90%;
     }
+}
+
+/* 🔹 Resume & Education Box */
+.resume-content,
+.education-box {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    color: white;
+}
+
+/* 🔹 Hover Effect - Similar to Project Card */
+.resume-content:hover,
+.education-box:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.contact-btn:hover {
+    color: #0073e6;
+    /* Default link color */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    /* Smooth transition */
+}
+
+.contact-btn:hover:hover {
+    color: #ea00ff;
+    /* Color when hovered */
 }
