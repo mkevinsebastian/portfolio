@@ -81,7 +81,7 @@ body {
 .skills,
 .education,
 .contact {
-    margin: 50px 0;
+    margin: 20px 0;
     padding: 20px;
 }
 
@@ -358,4 +358,46 @@ body {
 .contact-btn:hover:hover {
     color: #ea00ff;
     /* Color when hovered */
+}
+
+#certificates {
+    margin: 20px 0;
+    text-align: center;
+    padding: 20px;
+}
+
+.certificate-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.certificate-card {
+    width: 250px;
+    background: #1e293b;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.certificate-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.certificate-card img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.certificate-card p {
+    color: #ffcc00;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
 }
