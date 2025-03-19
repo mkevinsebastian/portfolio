@@ -29,6 +29,10 @@ body {
     margin: 20px 0;
 }
 
+header p{
+    font-size: 15px;
+}
+
 /* 🔹 Social Icons */
 .contact-icons {
     display: flex;
@@ -86,7 +90,7 @@ body {
 }
 
 .about{
-    padding-top: 5%;
+    padding-top: 3%;
 }
 
 /* 🔹 Skills List */
