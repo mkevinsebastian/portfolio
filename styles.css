@@ -405,3 +405,8 @@ header p{
     font-weight: bold;
     margin-top: 10px;
 }
+
+#courses h3{
+    padding-top: 1.5%;
+    font-weight: bold;
+}
