@@ -407,6 +407,12 @@ header p{
 }
 
 #courses h3{
-    padding-top: 1.5%;
+    padding-top: 1%;
     font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
 }
