@@ -415,3 +415,114 @@ header p{
     font-size: 0.9em;
     color: #666;
 }
+/* --- Recommendations Section Styling --- */
+#recommendations {
+    padding: 20px;
+    /* Consistent with other section padding */
+    text-align: center;
+    margin: 20px 0;
+    /* Consistent with #certificates margin */
+}
+
+#recommendations h2 {
+    font-size: 2em;
+    /* Keep your existing h2 size */
+    margin-bottom: 30px;
+    color: white;
+    /* Your default text color */
+}
+
+.recommendation-grid {
+    display: flex;
+    /* Use flexbox for similar layout as project/certificate grids */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    /* Consistent gap */
+    max-width: 1200px;
+    /* Match your container max-width if needed, or adjust */
+    margin: 0 auto;
+}
+
+.recommendation-card {
+    width: 300px;
+    /* Adjust width as needed for desired column count */
+    background: #1e293b;
+    /* Matches your resume-content and education-box background */
+    padding: 20px;
+    /* Similar padding to resume-content */
+    border-radius: 15px;
+    /* Matches your other card elements */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    /* Matches your existing shadow */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+    /* Matches your existing transition */
+    text-align: center;
+    /* <<<--- ADDED THIS LINE */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* To push the link button to the bottom */
+}
+
+.recommendation-card:hover {
+    transform: scale(1.08);
+    /* Matches your existing hover scale */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    /* Matches your existing hover shadow */
+}
+
+.recommendation-card .quote {
+    font-style: italic;
+    color: #d1d5db;
+    /* A slightly lighter white for quotes, similar to project-info p */
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.recommendation-card .author {
+    font-weight: bold;
+    color: #ffcc00;
+    /* Your accent color for the author's name */
+    margin-bottom: 10px;
+}
+
+.recommendation-card .linkedin-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    background-color: #0077B5;
+    /* Standard LinkedIn blue */
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    /* Matches your project github-btn */
+    transition: background-color 0.3s ease, transform 0.3s ease-in-out;
+    font-size: 0.9em;
+    /* Removed align-self: flex-start; because text-align: center will handle the button too */
+}
+
+.recommendation-card .linkedin-btn:hover {
+    background-color: #005582;
+    /* Darker LinkedIn blue on hover */
+    transform: scale(1.05);
+    /* Slightly smaller hover effect for buttons */
+}
+
+.recommendation-card .linkedin-btn i {
+    margin-left: 8px;
+    /* Spacing for the LinkedIn icon */
+}
+
+/* Responsive adjustment for recommendations (similar to project-card) */
+@media (max-width: 768px) {
+    .recommendation-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recommendation-card {
+        width: 90%;
+        /* Make cards take more width on smaller screens */
+    }
+}
