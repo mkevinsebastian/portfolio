@@ -157,9 +157,8 @@ header p{
 .project-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 30px;
     justify-content: center;
-    padding: 20px;
 }
 
 /* 🔹 Project Card */
