@@ -14,3 +14,4 @@ particlesJS("particles-js", {
                     "line_linked": { "enable": true, "opacity": 0.3 }
                 }
             });
+            
